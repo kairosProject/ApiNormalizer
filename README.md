@@ -55,8 +55,6 @@ A default context will be provided to allow normalization settings, such as grou
 
 Additionally, two event names will be injected to define the dispatched events.
 
-#### 4.2) algorithm
-
 #### 4.2) normalize algorithm
 
 The normalize method is in charge of the data normalization.
