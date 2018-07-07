@@ -4,7 +4,8 @@
     "type": "library",
     "require": {
         "kairos-project/api-controller": "^1@dev",
-        "symfony/serializer" : "^4.1"
+        "symfony/serializer" : "^4.1",
+        "kairos-project/api-loader": "^1@dev"
     },
 	"require-dev" : {
 		"infection/infection" : "^0.8.2",

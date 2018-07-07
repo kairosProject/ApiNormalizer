@@ -85,6 +85,7 @@ use KairosProject\ApiLoader\Loader\AbstractApiLoader;
 use KairosProject\ApiController\Event\ProcessEvent;
 
 $normalizer = new Normalizer(
+    $logger,
     $objectNormalizer
 );
 
@@ -116,6 +117,7 @@ $objectNormalizer = new ObjectNormalizer(
 );
 
 $normalizer = new Normalizer(
+    $logger,
     $objectNormalizer,
     ['groups' => ['output_group']]
 );
@@ -125,6 +127,7 @@ $normalizer = new Normalizer(
 
  ```PHP
 public function __construct(
+    LoggerInterface $logger,
     NormalizerInterface $normalizer,
     array $context = [],
     string $inputParameter = AbstractApiLoader::EVENT_KEY_STORAGE,

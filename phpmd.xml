@@ -14,6 +14,15 @@
     <rule ref="rulesets/design.xml/CouplingBetweenObjects"></rule>
     <rule ref="rulesets/controversial.xml" />
     <rule ref="rulesets/codesize.xml" />
-    <rule ref="rulesets/cleancode.xml"></rule>
+    <rule ref="rulesets/cleancode.xml">
+        <exclude name="StaticAccess" />
+    </rule>
     <rule ref="rulesets/naming.xml"></rule>
+    
+    
+    <rule ref="rulesets/cleancode.xml/StaticAccess">
+        <properties>
+            <property name="exceptions" value="Closure" />
+        </properties>
+    </rule>
 </ruleset>
