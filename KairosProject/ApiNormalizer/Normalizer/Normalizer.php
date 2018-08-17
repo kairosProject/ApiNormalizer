@@ -44,7 +44,7 @@ class Normalizer implements BaseInterface
      *
      * @var string
      */
-    public const NORMALIZED_DATA = 'normalized_data';
+    public const NORMALIZED_DATA = 'data';
 
     /**
      * Event before normalization
